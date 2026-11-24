@@ -1,0 +1,21 @@
+name: Verify project
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -v
+      - run: docker compose up --detach --wait
+      - run: |
+          port=$(docker compose port db 5432 | cut -d: -f2)
+          python project.py --pg-dsn "postgresql://search:local-demo@127.0.0.1:$port/search"
+      - if: always()
+        run: docker compose down --volumes

@@ -1,0 +1,138 @@
+{
+  "keyword": {
+    "recall_at_3": 0.75,
+    "p95_ms": 0.3262,
+    "queries": [
+      {
+        "tenant": "north",
+        "query": "proof of money",
+        "expected": "N-1",
+        "top3": []
+      },
+      {
+        "tenant": "north",
+        "query": "grade report",
+        "expected": "N-2",
+        "top3": [
+          "N-2"
+        ]
+      },
+      {
+        "tenant": "north",
+        "query": "intake appointment",
+        "expected": "N-3",
+        "top3": [
+          "N-3"
+        ]
+      },
+      {
+        "tenant": "north",
+        "query": "when does my program begin",
+        "expected": "N-4",
+        "top3": []
+      },
+      {
+        "tenant": "harbor",
+        "query": "funding declaration",
+        "expected": "H-1",
+        "top3": [
+          "H-1"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "move my interview",
+        "expected": "H-2",
+        "top3": [
+          "H-2"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "passport identity",
+        "expected": "H-3",
+        "top3": [
+          "H-3"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "deposit dates",
+        "expected": "H-4",
+        "top3": [
+          "H-4"
+        ]
+      }
+    ]
+  },
+  "vector": {
+    "recall_at_3": 1.0,
+    "p95_ms": 0.1957,
+    "queries": [
+      {
+        "tenant": "north",
+        "query": "proof of money",
+        "expected": "N-1",
+        "top3": [
+          "N-1"
+        ]
+      },
+      {
+        "tenant": "north",
+        "query": "grade report",
+        "expected": "N-2",
+        "top3": [
+          "N-2"
+        ]
+      },
+      {
+        "tenant": "north",
+        "query": "intake appointment",
+        "expected": "N-3",
+        "top3": [
+          "N-3"
+        ]
+      },
+      {
+        "tenant": "north",
+        "query": "when does my program begin",
+        "expected": "N-4",
+        "top3": [
+          "N-4"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "funding declaration",
+        "expected": "H-1",
+        "top3": [
+          "H-1"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "move my interview",
+        "expected": "H-2",
+        "top3": [
+          "H-2"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "passport identity",
+        "expected": "H-3",
+        "top3": [
+          "H-3"
+        ]
+      },
+      {
+        "tenant": "harbor",
+        "query": "deposit dates",
+        "expected": "H-4",
+        "top3": [
+          "H-4"
+        ]
+      }
+    ]
+  }
+}

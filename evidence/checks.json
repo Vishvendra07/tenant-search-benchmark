@@ -1,0 +1,7 @@
+{
+  "tests": 2,
+  "result": "passed",
+  "demo": "passed",
+  "pgvector_exact_query": "passed",
+  "sql_python_rankings_match": true
+}

@@ -1,0 +1,14 @@
+name: portfolio-tenant-vector
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: search
+      POSTGRES_USER: search
+      POSTGRES_PASSWORD: local-demo
+    ports: ['127.0.0.1::5432']
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -h 127.0.0.1 -U search -d search']
+      interval: 2s
+      timeout: 3s
+      retries: 15
